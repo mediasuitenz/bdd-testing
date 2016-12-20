@@ -13,19 +13,24 @@ This is a proof of concept only, but it lays the groundwork for a consistent BDD
 
 ## Client
 
-### Setup
+#### Setup
 - `cd client && npm i`
 
+#### Structure
 Purely a Ember CLI generated app, with minor alterations:
 - ember-cli-yadda
 - ember-cli-mocha
 - ember-cli-chai (provides chai and chai-as-promised)
 
+#### Tests
 TODO: Write a basic feature test using `ember-cli-yadda`
 
 ## API
+
+#### Setup
 - `cd api && npm i` (can also use `yarn` if you prefer)
 
+#### Structure
 Scaffolded using [`express-generator-api`](https://www.npmjs.com/package/express-generator-api), a reduced fork of the Express Generator project.
 
 Added testing libraries to provide similar style to the Ember structure:
@@ -35,6 +40,7 @@ Added testing libraries to provide similar style to the Ember structure:
 - chai-as-promised
 - chai-http
 
+#### Tests
 I have demonstrated one Feature test of an API here. Simply `cd api && npm test` to see it in action.
 
 The relevant files are `test.js`, and the files in the `test` folder.
